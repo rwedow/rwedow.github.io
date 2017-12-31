@@ -1,0 +1,132 @@
+<!-- FINAL WEBSITE -->
+<style>
+
+#first{
+    background: #C4AA95;
+}
+#second {
+  background: #2C3C34;
+}
+#third {
+  background: #A9B181;
+}
+#fourth {
+  background: #9B7F67;
+}
+i{
+    color: white;
+    padding: 10px;
+}
+.image{
+    background-image: url("img/agave.png");
+}
+</style>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RW | Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/9fcf5a3414.js"></script>
+    <link rel="stylesheet" href="stylefyle.css">
+
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id = "navbar-font">
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+         <li class="nav-item active">
+           <a class="nav-link" href="./index.html">home<span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./about.html">about</a>
+         </li>
+
+         <li class="nav-item">
+           <a class="nav-link" href="./resume.html">resume</a>
+         </li>
+
+         <li class="nav-item">
+           <a class="nav-link" href="./portfolio.html">portfolio</a>
+         </li>
+
+       </ul>
+     </div>
+    </nav>
+
+    <div class="image" >
+        <div class="text">
+            <h1>PORTFOLIO</h1>
+
+            <button type="button" class="btn btn-outline-light" onclick="smoothScroll(document.getElementById('first'))">view</button>
+          </div>
+    </div>
+    <div id = "first" class = "post" style="height:700;">
+        <h1>Mega Triangle Warrior</h1>
+        <p>Arcade Game, Made in Processing with Javascript, Spring 2016</p>
+        <p>
+          <video width="700" height="400" controls>
+            <source src="img/TriMov1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </p>
+        <p>
+            <button type="button" class="btn btn-outline-light" onclick="smoothScroll(document.getElementById('second'))">next</button>
+        </p>
+    </div>
+    <div id = "second" class = "post" style="height:700;">
+        <h1>Sprout</h1>
+        <p>Based on CubeRunner, Made in Processing with Java, Spring 2016 (Made with James Safko and Victor Gonzalez)</p>
+        <p>
+          <video width="700" height="400" controls>
+            <source src="img/SproutVid1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </p>
+        <p>
+            <button type="button" class="btn btn-outline-light" onclick="smoothScroll(document.getElementById('third'))">next</button>
+        </p>
+    </div>
+    <div id = "third" class = "post" style="height:700;">
+        <h1>Light Speed</h1>
+        <p>A Typing Game, Made in Processing with Java, Spring 2016</p>
+        <p>
+          <video width="700" height="400" controls>
+            <source src="img/LightVid1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </p>
+        <p>
+            <button type="button" class="btn btn-outline-light" onclick="smoothScroll(document.getElementById('fourth'))">next</button>
+        </p>
+    </div>
+
+    <div id = "fourth" class = "post" style="height:700;">
+        <h1>Lily Pads</h1>
+        <p>Music Game, Made in Processing with Java, Spring 2016</p>
+        <p>
+          <video width="700" height="400" controls>
+            <source src="img/lilypad.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </p>
+        <p>
+            <button type="button" class="btn btn-outline-light" onclick="smoothScroll(document.getElementById('fifth'))">next</button>
+        </p>
+    </div>
+
+    <button type="button" class="btn btn-outline-light" onclick="smoothScroll(document.getElementById('navbarNavDropdown'))">back</button>
+
+
+</body>
