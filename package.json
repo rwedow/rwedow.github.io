@@ -2,7 +2,9 @@
   "name": "take2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rwedow.github.io/",
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-player": "^1.7.0",
@@ -16,7 +18,9 @@
     "eject": "react-scripts eject",
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "serve": "serve ./public"
+    "serve": "serve ./public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
